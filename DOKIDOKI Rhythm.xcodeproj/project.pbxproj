@@ -12,6 +12,7 @@
 		EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99C1F73E95D005665F1 /* ViewController.swift */; };
 		EAD8C9A21F73E95D005665F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A11F73E95D005665F1 /* Assets.xcassets */; };
 		EAD8C9A51F73E95D005665F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */; };
+		EAD8C9AE1F73EEA2005665F1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		EAD8C9A11F73E95D005665F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD8C9A41F73E95D005665F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD8C9A61F73E95D005665F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD8C9AC1F73EEA2005665F1 /* DOKIDOKI Rhythm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DOKIDOKI Rhythm.entitlements"; sourceTree = "<group>"; };
+		EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */,
+				EAD8C9AE1F73EEA2005665F1 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +45,7 @@
 		2CDB372DD9FEC18CA8290555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */,
 				5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */,
 			);
 			name = Frameworks;
@@ -76,6 +81,7 @@
 		EAD8C9991F73E95D005665F1 /* DOKIDOKI Rhythm */ = {
 			isa = PBXGroup;
 			children = (
+				EAD8C9AC1F73EEA2005665F1 /* DOKIDOKI Rhythm.entitlements */,
 				EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */,
 				EAD8C99C1F73E95D005665F1 /* ViewController.swift */,
 				EAD8C9A11F73E95D005665F1 /* Assets.xcassets */,
@@ -121,6 +127,11 @@
 					EAD8C9961F73E95D005665F1 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -344,6 +355,7 @@
 			baseConfigurationReference = 26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DOKIDOKI Rhythm/DOKIDOKI Rhythm.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FPZK4WRGW7;
 				INFOPLIST_FILE = "DOKIDOKI Rhythm/Info.plist";
@@ -360,6 +372,7 @@
 			baseConfigurationReference = A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DOKIDOKI Rhythm/DOKIDOKI Rhythm.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FPZK4WRGW7;
 				INFOPLIST_FILE = "DOKIDOKI Rhythm/Info.plist";
