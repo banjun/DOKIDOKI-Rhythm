@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
 		EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */; };
 		EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99C1F73E95D005665F1 /* ViewController.swift */; };
 		EAD8C9A21F73E95D005665F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A11F73E95D005665F1 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
+		5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOKIDOKI_Rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.release.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
 		EAD8C9971F73E95D005665F1 /* DOKIDOKI Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOKIDOKI Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8C99C1F73E95D005665F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CDB372DD9FEC18CA8290555 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD39753DEFD703191611F5D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */,
+				A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EAD8C98E1F73E95D005665F1 = {
 			isa = PBXGroup;
 			children = (
 				EAD8C9991F73E95D005665F1 /* DOKIDOKI Rhythm */,
 				EAD8C9981F73E95D005665F1 /* Products */,
+				CD39753DEFD703191611F5D4 /* Pods */,
+				2CDB372DD9FEC18CA8290555 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAD8C9A91F73E95D005665F1 /* Build configuration list for PBXNativeTarget "DOKIDOKI Rhythm" */;
 			buildPhases = (
+				9398B06B771471F87ED59836 /* [CP] Check Pods Manifest.lock */,
 				EAD8C9931F73E95D005665F1 /* Sources */,
 				EAD8C9941F73E95D005665F1 /* Frameworks */,
 				EAD8C9951F73E95D005665F1 /* Resources */,
+				06486D48F6AD5D2278BEFDE7 /* [CP] Embed Pods Frameworks */,
+				06D30641E031D35FC5B9FC10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,6 +153,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06486D48F6AD5D2278BEFDE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/※ikemen/Ikemen.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06D30641E031D35FC5B9FC10 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9398B06B771471F87ED59836 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DOKIDOKI Rhythm-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EAD8C9931F73E95D005665F1 /* Sources */ = {
@@ -260,6 +341,7 @@
 		};
 		EAD8C9AA1F73E95D005665F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +357,7 @@
 		};
 		EAD8C9AB1F73E95D005665F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
