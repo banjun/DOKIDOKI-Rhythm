@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
+		EAA04E721FE4C6B400C80876 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E701FE4C6B400C80876 /* Interface.storyboard */; };
+		EAA04E741FE4C6B400C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E731FE4C6B400C80876 /* Assets.xcassets */; };
+		EAA04E7B1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EAA04E801FE4C6B500C80876 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA04E7F1FE4C6B500C80876 /* InterfaceController.swift */; };
+		EAA04E821FE4C6B500C80876 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA04E811FE4C6B500C80876 /* ExtensionDelegate.swift */; };
+		EAA04E841FE4C6B500C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E831FE4C6B500C80876 /* Assets.xcassets */; };
+		EAA04E881FE4C6B500C80876 /* HeartbeatPlayer.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */; };
 		EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */; };
 		EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99C1F73E95D005665F1 /* ViewController.swift */; };
 		EAD8C9A21F73E95D005665F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A11F73E95D005665F1 /* Assets.xcassets */; };
@@ -15,10 +22,61 @@
 		EAD8C9AE1F73EEA2005665F1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EAA04E7C1FE4C6B500C80876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD8C98F1F73E95D005665F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA04E791FE4C6B400C80876;
+			remoteInfo = "HeartbeatPlayer Extension";
+		};
+		EAA04E861FE4C6B500C80876 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD8C98F1F73E95D005665F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAA04E6D1FE4C6B400C80876;
+			remoteInfo = HeartbeatPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EAA04E8E1FE4C6B500C80876 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EAA04E7B1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA04E901FE4C6B500C80876 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				EAA04E881FE4C6B500C80876 /* HeartbeatPlayer.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
 		5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOKIDOKI_Rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.release.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
+		EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartbeatPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA04E711FE4C6B400C80876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		EAA04E731FE4C6B400C80876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAA04E751FE4C6B400C80876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HeartbeatPlayer Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA04E7F1FE4C6B500C80876 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		EAA04E811FE4C6B500C80876 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		EAA04E831FE4C6B500C80876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAA04E851FE4C6B500C80876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD8C9971F73E95D005665F1 /* DOKIDOKI Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOKIDOKI Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EAD8C99C1F73E95D005665F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +88,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EAA04E771FE4C6B400C80876 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAD8C9941F73E95D005665F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,10 +125,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EAA04E6F1FE4C6B400C80876 /* HeartbeatPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				EAA04E701FE4C6B400C80876 /* Interface.storyboard */,
+				EAA04E731FE4C6B400C80876 /* Assets.xcassets */,
+				EAA04E751FE4C6B400C80876 /* Info.plist */,
+			);
+			path = HeartbeatPlayer;
+			sourceTree = "<group>";
+		};
+		EAA04E7E1FE4C6B500C80876 /* HeartbeatPlayer Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EAA04E7F1FE4C6B500C80876 /* InterfaceController.swift */,
+				EAA04E811FE4C6B500C80876 /* ExtensionDelegate.swift */,
+				EAA04E831FE4C6B500C80876 /* Assets.xcassets */,
+				EAA04E851FE4C6B500C80876 /* Info.plist */,
+			);
+			path = "HeartbeatPlayer Extension";
+			sourceTree = "<group>";
+		};
 		EAD8C98E1F73E95D005665F1 = {
 			isa = PBXGroup;
 			children = (
 				EAD8C9991F73E95D005665F1 /* DOKIDOKI Rhythm */,
+				EAA04E6F1FE4C6B400C80876 /* HeartbeatPlayer */,
+				EAA04E7E1FE4C6B500C80876 /* HeartbeatPlayer Extension */,
 				EAD8C9981F73E95D005665F1 /* Products */,
 				CD39753DEFD703191611F5D4 /* Pods */,
 				2CDB372DD9FEC18CA8290555 /* Frameworks */,
@@ -74,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				EAD8C9971F73E95D005665F1 /* DOKIDOKI Rhythm.app */,
+				EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */,
+				EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +184,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EAA04E6D1FE4C6B400C80876 /* HeartbeatPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA04E8F1FE4C6B500C80876 /* Build configuration list for PBXNativeTarget "HeartbeatPlayer" */;
+			buildPhases = (
+				EAA04E6C1FE4C6B400C80876 /* Resources */,
+				EAA04E8E1FE4C6B500C80876 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAA04E7D1FE4C6B500C80876 /* PBXTargetDependency */,
+			);
+			name = HeartbeatPlayer;
+			productName = HeartbeatPlayer;
+			productReference = EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		EAA04E791FE4C6B400C80876 /* HeartbeatPlayer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAA04E8D1FE4C6B500C80876 /* Build configuration list for PBXNativeTarget "HeartbeatPlayer Extension" */;
+			buildPhases = (
+				EAA04E761FE4C6B400C80876 /* Sources */,
+				EAA04E771FE4C6B400C80876 /* Frameworks */,
+				EAA04E781FE4C6B400C80876 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HeartbeatPlayer Extension";
+			productName = "HeartbeatPlayer Extension";
+			productReference = EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		EAD8C9961F73E95D005665F1 /* DOKIDOKI Rhythm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAD8C9A91F73E95D005665F1 /* Build configuration list for PBXNativeTarget "DOKIDOKI Rhythm" */;
@@ -104,10 +228,12 @@
 				EAD8C9951F73E95D005665F1 /* Resources */,
 				06486D48F6AD5D2278BEFDE7 /* [CP] Embed Pods Frameworks */,
 				06D30641E031D35FC5B9FC10 /* [CP] Copy Pods Resources */,
+				EAA04E901FE4C6B500C80876 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				EAA04E871FE4C6B500C80876 /* PBXTargetDependency */,
 			);
 			name = "DOKIDOKI Rhythm";
 			productName = "DOKIDOKI Rhythm";
@@ -120,13 +246,21 @@
 		EAD8C98F1F73E95D005665F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0900;
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = banjun;
 				TargetAttributes = {
+					EAA04E6D1FE4C6B400C80876 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+					EAA04E791FE4C6B400C80876 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
 					EAD8C9961F73E95D005665F1 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
@@ -149,11 +283,30 @@
 			projectRoot = "";
 			targets = (
 				EAD8C9961F73E95D005665F1 /* DOKIDOKI Rhythm */,
+				EAA04E6D1FE4C6B400C80876 /* HeartbeatPlayer */,
+				EAA04E791FE4C6B400C80876 /* HeartbeatPlayer Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EAA04E6C1FE4C6B400C80876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA04E741FE4C6B400C80876 /* Assets.xcassets in Resources */,
+				EAA04E721FE4C6B400C80876 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAA04E781FE4C6B400C80876 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA04E841FE4C6B500C80876 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAD8C9951F73E95D005665F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,6 +373,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EAA04E761FE4C6B400C80876 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAA04E821FE4C6B500C80876 /* ExtensionDelegate.swift in Sources */,
+				EAA04E801FE4C6B500C80876 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAD8C9931F73E95D005665F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -231,7 +393,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		EAA04E7D1FE4C6B500C80876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAA04E791FE4C6B400C80876 /* HeartbeatPlayer Extension */;
+			targetProxy = EAA04E7C1FE4C6B500C80876 /* PBXContainerItemProxy */;
+		};
+		EAA04E871FE4C6B500C80876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAA04E6D1FE4C6B400C80876 /* HeartbeatPlayer */;
+			targetProxy = EAA04E861FE4C6B500C80876 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		EAA04E701FE4C6B400C80876 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAA04E711FE4C6B400C80876 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -243,6 +426,86 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EAA04E891FE4C6B500C80876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FPZK4WRGW7;
+				IBSC_MODULE = HeartbeatPlayer_Extension;
+				INFOPLIST_FILE = HeartbeatPlayer/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "852e6166-4707-4d2b-8a5c-a2e5b972ec77";
+				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI-Rhythm-watchkitapp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EAA04E8A1FE4C6B500C80876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = HeartbeatPlayer_Extension;
+				INFOPLIST_FILE = HeartbeatPlayer/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		EAA04E8B1FE4C6B500C80876 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = FPZK4WRGW7;
+				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "852e6166-4707-4d2b-8a5c-a2e5b972ec77";
+				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI-Rhythm-watchkitapp";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		EAA04E8C1FE4C6B500C80876 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 		EAD8C9A71F73E95D005665F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,12 +619,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DOKIDOKI Rhythm/DOKIDOKI Rhythm.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FPZK4WRGW7;
 				INFOPLIST_FILE = "DOKIDOKI Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "31c2e388-5824-4fe4-b2a4-09ceb7644ae2";
+				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI-Rhythm";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,12 +638,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "DOKIDOKI Rhythm/DOKIDOKI Rhythm.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FPZK4WRGW7;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "DOKIDOKI Rhythm/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,6 +653,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EAA04E8D1FE4C6B500C80876 /* Build configuration list for PBXNativeTarget "HeartbeatPlayer Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA04E8B1FE4C6B500C80876 /* Debug */,
+				EAA04E8C1FE4C6B500C80876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAA04E8F1FE4C6B500C80876 /* Build configuration list for PBXNativeTarget "HeartbeatPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAA04E891FE4C6B500C80876 /* Debug */,
+				EAA04E8A1FE4C6B500C80876 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EAD8C9921F73E95D005665F1 /* Build configuration list for PBXProject "DOKIDOKI Rhythm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
