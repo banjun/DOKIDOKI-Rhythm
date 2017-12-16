@@ -490,10 +490,10 @@
 				DEVELOPMENT_TEAM = FPZK4WRGW7;
 				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.extension";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "a5509b70-6da9-4b48-bd60-7a1fd6654924";
-				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI Rhythm watchkitextension";
+				PROVISIONING_PROFILE = "9c0a5200-1d9d-4d40-800f-c51cda041942";
+				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI Rhythm watchkitapp extension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -511,7 +511,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.extension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
