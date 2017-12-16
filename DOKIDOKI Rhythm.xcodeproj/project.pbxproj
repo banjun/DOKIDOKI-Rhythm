@@ -12,6 +12,8 @@
 		EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1908781FE4CFF900AE0416 /* HealthKit.framework */; };
 		EA630FD81FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */; };
 		EA630FD91FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */; };
+		EA630FDB1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */; };
+		EA630FDE1FE4E72700418EB8 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */; };
 		EAA04E721FE4C6B400C80876 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E701FE4C6B400C80876 /* Interface.storyboard */; };
 		EAA04E741FE4C6B400C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E731FE4C6B400C80876 /* Assets.xcassets */; };
 		EAA04E7B1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -78,6 +80,8 @@
 		EA1908771FE4CFF900AE0416 /* HeartbeatPlayer Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartbeatPlayer Extension.entitlements"; sourceTree = "<group>"; };
 		EA1908781FE4CFF900AE0416 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokiDokiActivity.swift; sourceTree = "<group>"; };
+		EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DokiDokiActivityViewController.swift; sourceTree = "<group>"; };
+		EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
 		EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartbeatPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA04E711FE4C6B400C80876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EAA04E731FE4C6B400C80876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -198,7 +202,9 @@
 				EAD8C9AC1F73EEA2005665F1 /* DOKIDOKI Rhythm.entitlements */,
 				EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */,
 				EAD8C99C1F73E95D005665F1 /* ViewController.swift */,
+				EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */,
 				EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */,
+				EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */,
 				EAD8C9A11F73E95D005665F1 /* Assets.xcassets */,
 				EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */,
 				EAD8C9A61F73E95D005665F1 /* Info.plist */,
@@ -488,6 +494,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */,
+				EA630FDB1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift in Sources */,
+				EA630FDE1FE4E72700418EB8 /* PlaylistRow.swift in Sources */,
 				EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */,
 				EA630FD81FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */,
 			);
