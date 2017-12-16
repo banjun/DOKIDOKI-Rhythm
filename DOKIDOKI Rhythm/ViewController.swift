@@ -5,12 +5,16 @@ import NorthLayout
 import Ikemen
 import BrightFutures
 import Result
+import ReactiveSwift
 
 private let store = HKHealthStore()
 
 class ViewController: FormViewController {
+    let activitiesSection = Section()
+
     init() {
         super.init(nibName: nil, bundle: nil)
+        form +++ activitiesSection
     }
 
     required init?(coder aDecoder: NSCoder) {fatalError()}
@@ -57,26 +61,42 @@ class ViewController: FormViewController {
     }
 
     private func healthStoreDidSetup() {
-        let futures: [Future<DokiDokiActivity, NoError>] = [
-            activities(title: "SSA Day1",
-                       start: ISO8601DateFormatter().date(from: "2017-08-12T17:30:00+0900")!,
-                       end: ISO8601DateFormatter().date(from: "2017-08-12T22:30:00+0900")!),
-            activities(title: "SSA Day2",
-                       start: ISO8601DateFormatter().date(from: "2017-08-13T17:30:00+0900")!,
-                       end: ISO8601DateFormatter().date(from: "2017-08-13T22:30:00+0900")!),
-            ]
-        futures.sequence()
-            .onSuccess(DispatchQueue.main.context) { activities in
-                self.form +++ Section {
-                    $0.append(contentsOf: activities.map {a in PlaylistRow {
-                        $0.value = a
-                        $0.onCellSelection { [weak self] _, _ in
-                            DispatchQueue.main.async {
-                                let vc = DokiDokiActivityViewController(a)
-                                self?.show(vc, sender: nil)
-                            }
+        guard activitiesSection.isEmpty else { return }
+
+        let periods: [(title: String, start: String, end: String)] = [
+            ("宮城 Day1", "2017-05-13T17:00:00+0900", "2017-05-13T20:00:00+0900"),
+            ("宮城 Day2", "2017-05-14T16:00:00+0900", "2017-05-14T19:00:00+0900"),
+            ("石川 Day1", "2017-05-27T17:00:00+0900", "2017-05-27T20:00:00+0900"),
+            ("石川 Day2", "2017-05-28T16:00:00+0900", "2017-05-28T19:00:00+0900"),
+            ("大阪 Day1", "2017-06-09T18:00:00+0900", "2017-06-09T21:00:00+0900"),
+            ("大阪 Day2", "2017-06-10T16:00:00+0900", "2017-06-10T19:00:00+0900"),
+            ("静岡 Day1", "2017-06-24T17:00:00+0900", "2017-06-24T20:00:00+0900"),
+            ("静岡 Day2", "2017-06-25T16:00:00+0900", "2017-06-25T19:00:00+0900"),
+            ("幕張 Day1", "2017-07-08T17:00:00+0900", "2017-07-08T20:00:00+0900"),
+            ("幕張 Day2", "2017-07-09T16:00:00+0900", "2017-07-09T19:00:00+0900"),
+            ("福岡 Day1", "2017-07-29T16:30:00+0900", "2017-07-29T19:30:00+0900"),
+            ("福岡 Day2", "2017-07-30T15:30:00+0900", "2017-07-30T18:30:00+0900"),
+            ("SSA Day1", "2017-08-12T17:30:00+0900", "2017-08-12T22:30:00+0900"),
+            ("SSA Day2", "2017-08-13T17:30:00+0900", "2017-08-13T22:30:00+0900")]
+
+        SignalProducer<(title: String, start: String, end: String), NoError>(periods)
+            .map {($0.title, ISO8601DateFormatter().date(from: $0.start)!, ISO8601DateFormatter().date(from: $0.end)!)}
+            .flatMap(.concat) { period in
+                SignalProducer<DokiDokiActivity, NoError> { observer, lifetime in
+                    self.activities(title: period.0, start: period.1, end: period.2).onSuccess { a in
+                        observer.send(value: a)
+                        observer.sendCompleted()
+                    }
+                }
+            }.observe(on: QueueScheduler.main).startWithValues { a in
+                self.activitiesSection <<< PlaylistRow {
+                    $0.value = a
+                    $0.onCellSelection { [weak self] _, _ in
+                        DispatchQueue.main.async {
+                            let vc = DokiDokiActivityViewController(a)
+                            self?.show(vc, sender: nil)
                         }
-                        }})
+                    }
                 }
         }
 //
