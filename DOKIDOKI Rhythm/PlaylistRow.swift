@@ -36,7 +36,7 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
 
     override func update() {
         titleLabel.text = row.value?.title
-        dateLabel.text = row.value.map {(DateFormatter() ※ {$0.dateFormat = "yyyy-mm-dd HH:mm -"}).string(from: $0.start)}
+        dateLabel.text = row.value.map {(DateFormatter() ※ {$0.dateFormat = "yyyy-MM-dd HH:mm -"}).string(from: $0.start)}
         heartLabel.text = "💓" + ("\(row.value?.heartbeats.map {$0.heartrate}.max().map {String($0)} ?? "---")")
     }
 }
