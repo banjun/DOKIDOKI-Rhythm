@@ -9,6 +9,7 @@
 import Foundation
 import HealthKit
 import WatchKit
+import Ikemen
 
 class InterfaceController: WKInterfaceController {
     // TODO: receive heartrate from host app

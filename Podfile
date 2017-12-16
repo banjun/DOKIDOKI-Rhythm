@@ -5,6 +5,9 @@ target 'DOKIDOKI Rhythm' do
   use_frameworks!
 
   pod '※ikemen'
+  pod 'NorthLayout'
+  pod 'Eureka'
+  pod 'ReactiveCocoa'
 end
 
 target 'HeartbeatPlayer Extension' do
