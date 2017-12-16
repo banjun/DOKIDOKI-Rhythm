@@ -19,6 +19,7 @@ class InterfaceController: WKInterfaceController {
     private let healthStore = HKHealthStore()
     private var hapticFeedbackTimer: Timer?
     private var workoutSession: HKWorkoutSession?
+    private let playerSession: PlayerSession = PlayerSession()
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -26,12 +27,6 @@ class InterfaceController: WKInterfaceController {
 
     override func willActivate() {
         super.willActivate()
-
-        if (WCSession.isSupported()) {
-            let session = WCSession.default
-            session.delegate = self
-            session.activate()
-        }
     }
 
     override func didDeactivate() {
@@ -50,6 +45,13 @@ class InterfaceController: WKInterfaceController {
             self.workoutSession = session
         } catch {
             print(error)
+        }
+    }
+
+    private func stopWorkout() {
+        if let session = self.workoutSession {
+            healthStore.end(session)
+            self.workoutSession = nil
         }
     }
 
@@ -74,14 +76,5 @@ extension InterfaceController: HKWorkoutSessionDelegate {
             hapticFeedbackTimer?.invalidate()
             hapticFeedbackTimer = nil
         }
-    }
-}
-
-extension InterfaceController: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
-    }
-
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Swift.Void) {
-        NSLog("\(message)")
     }
 }

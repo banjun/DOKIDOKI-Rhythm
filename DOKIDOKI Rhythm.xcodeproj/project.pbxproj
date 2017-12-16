@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13A5C8DB1FE4E65E00B2ACB0 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */; };
+		13A5C8DE1FE4EC7F00B2ACB0 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */; };
 		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
 		DCE59A21E44AA3DBC6E90CA0 /* Pods_HeartbeatPlayer_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9E4ABFCFB8AB02469BCE48 /* Pods_HeartbeatPlayer_Extension.framework */; };
 		EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1908781FE4CFF900AE0416 /* HealthKit.framework */; };
@@ -489,6 +490,7 @@
 				EAA04E821FE4C6B500C80876 /* ExtensionDelegate.swift in Sources */,
 				EAA04E801FE4C6B500C80876 /* InterfaceController.swift in Sources */,
 				EA630FD91FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */,
+				13A5C8DE1FE4EC7F00B2ACB0 /* PlayerSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
