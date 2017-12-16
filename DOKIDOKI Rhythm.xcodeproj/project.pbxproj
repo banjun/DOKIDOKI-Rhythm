@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
+		EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1908781FE4CFF900AE0416 /* HealthKit.framework */; };
 		EAA04E721FE4C6B400C80876 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E701FE4C6B400C80876 /* Interface.storyboard */; };
 		EAA04E741FE4C6B400C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E731FE4C6B400C80876 /* Assets.xcassets */; };
 		EAA04E7B1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = EAA04E7A1FE4C6B400C80876 /* HeartbeatPlayer Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -68,6 +69,8 @@
 		26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
 		5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOKIDOKI_Rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.release.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
+		EA1908771FE4CFF900AE0416 /* HeartbeatPlayer Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartbeatPlayer Extension.entitlements"; sourceTree = "<group>"; };
+		EA1908781FE4CFF900AE0416 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartbeatPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAA04E711FE4C6B400C80876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		EAA04E731FE4C6B400C80876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +114,7 @@
 		2CDB372DD9FEC18CA8290555 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA1908781FE4CFF900AE0416 /* HealthKit.framework */,
 				EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */,
 				5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */,
 			);
@@ -138,6 +143,7 @@
 		EAA04E7E1FE4C6B500C80876 /* HeartbeatPlayer Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EA1908771FE4CFF900AE0416 /* HeartbeatPlayer Extension.entitlements */,
 				EAA04E7F1FE4C6B500C80876 /* InterfaceController.swift */,
 				EAA04E811FE4C6B500C80876 /* ExtensionDelegate.swift */,
 				EAA04E831FE4C6B500C80876 /* Assets.xcassets */,
@@ -257,6 +263,14 @@
 					EAA04E791FE4C6B400C80876 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 					EAD8C9961F73E95D005665F1 = {
 						CreatedOnToolsVersion = 9.0;
@@ -471,14 +485,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartbeatPlayer Extension/HeartbeatPlayer Extension.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = FPZK4WRGW7;
 				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "852e6166-4707-4d2b-8a5c-a2e5b972ec77";
-				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI-Rhythm-watchkitapp";
+				PROVISIONING_PROFILE = "a5509b70-6da9-4b48-bd60-7a1fd6654924";
+				PROVISIONING_PROFILE_SPECIFIER = "DOKIDOKI Rhythm watchkitextension";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -491,11 +506,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "HeartbeatPlayer Extension/HeartbeatPlayer Extension.entitlements";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "HeartbeatPlayer Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitapp.watchkitextension";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.banjun.DOKIDOKI-Rhythm.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
