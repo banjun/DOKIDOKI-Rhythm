@@ -13,8 +13,7 @@ import WatchKit
 import Ikemen
 
 class InterfaceController: WKInterfaceController {
-    // TODO: receive heartrate from host app
-    private let kHeartrate = 160
+    private var heartrate: Int?
 
     private let healthStore = HKHealthStore()
     private var hapticFeedbackTimer: Timer?
@@ -27,6 +26,10 @@ class InterfaceController: WKInterfaceController {
 
     override func willActivate() {
         super.willActivate()
+        playerSession.onActivity = { activity in
+            self.heartrate = activity.heartbeats.map { $0.heartrate }.max()
+            self.startWorkout()
+        }
     }
 
     override func didDeactivate() {
@@ -35,6 +38,8 @@ class InterfaceController: WKInterfaceController {
     }
 
     private func startWorkout() {
+        stopWorkout()
+
         let workoutConfiguration = HKWorkoutConfiguration()
         workoutConfiguration.activityType = .other
 
@@ -70,7 +75,7 @@ extension InterfaceController: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
         switch toState {
         case .running:
-            hapticFeedbackTimer = Timer(timeInterval: 60.0/Double(kHeartrate), target: self, selector: #selector(beat), userInfo: nil, repeats: true)
+            hapticFeedbackTimer = Timer(timeInterval: 60.0/Double(heartrate ?? 1), target: self, selector: #selector(beat), userInfo: nil, repeats: true)
             RunLoop.main.add(hapticFeedbackTimer!, forMode: .defaultRunLoopMode)
         default:
             hapticFeedbackTimer?.invalidate()

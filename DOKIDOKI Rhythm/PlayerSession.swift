@@ -10,6 +10,8 @@ import Foundation
 import WatchConnectivity
 
 class PlayerSession: NSObject {
+    var onActivity: ((DokiDokiActivity)->Void)?
+
     private lazy var session: WCSession? = {
         if WCSession.isSupported() {
             return WCSession.default
@@ -54,6 +56,7 @@ extension PlayerSession: WCSessionDelegate {
         if let data = message["activity"] as? Data {
             let activity = try! JSONDecoder().decode(DokiDokiActivity.self, from: data)
             NSLog("\(activity)")
+            self.onActivity?(activity)
         }
     }
 }
