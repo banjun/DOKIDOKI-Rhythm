@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
+		DCE59A21E44AA3DBC6E90CA0 /* Pods_HeartbeatPlayer_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9E4ABFCFB8AB02469BCE48 /* Pods_HeartbeatPlayer_Extension.framework */; };
 		EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1908781FE4CFF900AE0416 /* HealthKit.framework */; };
 		EAA04E721FE4C6B400C80876 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E701FE4C6B400C80876 /* Interface.storyboard */; };
 		EAA04E741FE4C6B400C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E731FE4C6B400C80876 /* Assets.xcassets */; };
@@ -66,9 +67,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A6C735A7401AEE097442D30 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartbeatPlayer Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
+		36AC7B67AC5FC6BF895E523D /* Pods-HeartbeatPlayer Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartbeatPlayer Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOKIDOKI_Rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.release.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
+		CF9E4ABFCFB8AB02469BCE48 /* Pods_HeartbeatPlayer_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartbeatPlayer_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA1908771FE4CFF900AE0416 /* HeartbeatPlayer Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HeartbeatPlayer Extension.entitlements"; sourceTree = "<group>"; };
 		EA1908781FE4CFF900AE0416 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeartbeatPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,11 +95,19 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		07DCFFB6AC2BA82EB36E000D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EAA04E771FE4C6B400C80876 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */,
+				DCE59A21E44AA3DBC6E90CA0 /* Pods_HeartbeatPlayer_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +129,7 @@
 				EA1908781FE4CFF900AE0416 /* HealthKit.framework */,
 				EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */,
 				5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */,
+				CF9E4ABFCFB8AB02469BCE48 /* Pods_HeartbeatPlayer_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +139,8 @@
 			children = (
 				26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */,
 				A56388A8F34E26FC528E67FC /* Pods-DOKIDOKI Rhythm.release.xcconfig */,
+				0A6C735A7401AEE097442D30 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */,
+				36AC7B67AC5FC6BF895E523D /* Pods-HeartbeatPlayer Extension.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -196,6 +211,7 @@
 			buildPhases = (
 				EAA04E6C1FE4C6B400C80876 /* Resources */,
 				EAA04E8E1FE4C6B500C80876 /* Embed App Extensions */,
+				07DCFFB6AC2BA82EB36E000D /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -211,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EAA04E8D1FE4C6B500C80876 /* Build configuration list for PBXNativeTarget "HeartbeatPlayer Extension" */;
 			buildPhases = (
+				8BC474DB672ACBE9BAF4BE3E /* [CP] Check Pods Manifest.lock */,
 				EAA04E761FE4C6B400C80876 /* Sources */,
 				EAA04E771FE4C6B400C80876 /* Frameworks */,
 				EAA04E781FE4C6B400C80876 /* Resources */,
+				2C7119DEB111E43480B422F7 /* [CP] Embed Pods Frameworks */,
+				2892D9BC6F1C3C9B7E9A2330 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -340,7 +359,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/※ikemen/Ikemen.framework",
+				"${BUILT_PRODUCTS_DIR}/※ikemen-iOS/Ikemen.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -364,6 +383,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2892D9BC6F1C3C9B7E9A2330 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C7119DEB111E43480B422F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/※ikemen-watchOS/Ikemen.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Ikemen.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BC474DB672ACBE9BAF4BE3E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HeartbeatPlayer Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9398B06B771471F87ED59836 /* [CP] Check Pods Manifest.lock */ = {
@@ -483,6 +553,7 @@
 		};
 		EAA04E8B1FE4C6B500C80876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A6C735A7401AEE097442D30 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartbeatPlayer Extension/HeartbeatPlayer Extension.entitlements";
@@ -504,6 +575,7 @@
 		};
 		EAA04E8C1FE4C6B500C80876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AC7B67AC5FC6BF895E523D /* Pods-HeartbeatPlayer Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "HeartbeatPlayer Extension/HeartbeatPlayer Extension.entitlements";

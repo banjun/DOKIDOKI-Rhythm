@@ -7,82 +7,140 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		39504F632EA0F9B40AE711F26B881E42 /* ※ikemen-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0710078311439201E376B007E0A63D79 /* ※ikemen-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		534D83E0CB8B7511BA7761AF29EBD977 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		79DA1B658B0C665FDE13F2033834BDEE /* ※ikemen-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D15378F69869B8B1215848F9C07829B8 /* ※ikemen-dummy.m */; };
-		A6E9A31D5740D19B7BEE73A3DC4CE8DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		ADEAEA57BF1372236C781656D808CB48 /* ※ikemen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB174B8CC0FFC23F559AAE2F2A4225 /* ※ikemen.swift */; };
-		CB8C43E92AD5A9201A07C5CEF69F9CED /* Pods-DOKIDOKI Rhythm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21B4228A66743D137527F4E7960F317B /* Pods-DOKIDOKI Rhythm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F75706D5A8D4D87602410C6A2E88340C /* Pods-DOKIDOKI Rhythm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAED445D5A50036ADB8EA65DE4AE8D88 /* Pods-DOKIDOKI Rhythm-dummy.m */; };
+		0DA3E23DDF900E8CD8A47E3625DBA51D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		341190FD8AD9435BAA778010D2167276 /* ※ikemen-watchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F86899138853094B41EF2D6E1BD6ABA0 /* ※ikemen-watchOS-dummy.m */; };
+		3AEB68B47CA48E91B7D476B1ED0DE75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		4C1F0C24FDC12360CAD3EAEA908DCCFF /* Pods-HeartbeatPlayer Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D61414620CB3877D1BDE9AD39EC91E94 /* Pods-HeartbeatPlayer Extension-dummy.m */; };
+		660A378DE9DB59961E2FE1FC0850CD84 /* Pods-DOKIDOKI Rhythm-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 05297C9058A7C3146EE8B6AD3A84E32B /* Pods-DOKIDOKI Rhythm-dummy.m */; };
+		738CF2E5A64653D5335F6AB41D79BCC0 /* Pods-HeartbeatPlayer Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87D473ABADD60713A729C6738697153F /* Pods-HeartbeatPlayer Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77E3154EBFB12E46B474225449F60F59 /* ※ikemen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291BC47B07744215A1095CF3C99E04B1 /* ※ikemen.swift */; };
+		87AD55238184DD7531F824D74EF4C8E6 /* ※ikemen-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EE021AF79C0EF002A6A2E556EAE7DFE1 /* ※ikemen-iOS-dummy.m */; };
+		B389DD5AC09FE9893133F9F290933B03 /* ※ikemen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291BC47B07744215A1095CF3C99E04B1 /* ※ikemen.swift */; };
+		DE983A894EAABA86AA9A5F54832ED8F4 /* ※ikemen-watchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CEF056660F6C7CCCA42F8152B9EB3BB /* ※ikemen-watchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64F6FC1F50BB361F1D55AAB76E6AD18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */; };
+		EC43F3F37B2E21B3E7322F1A1E74F892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76720B026417625FB62285B73CECF0BF /* Foundation.framework */; };
+		FA0ADE63BA2060F970FC77424D3AD715 /* ※ikemen-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8807C957811503958EDD8769517D4F34 /* ※ikemen-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC4D93C9001A76E3DB8EBF5DBFEF49E8 /* Pods-DOKIDOKI Rhythm-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5047C622F0489F275F34EB5449134D4A /* Pods-DOKIDOKI Rhythm-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1E49C5CB14DEDBAA3C256CBA0B84357B /* PBXContainerItemProxy */ = {
+		1E56EFA742AAC6347301E2F9AAE5FD64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4321759387FBCD6E7EC2071E5028A67F;
-			remoteInfo = "※ikemen";
+			remoteGlobalIDString = 208BB336B94A2D60890B7F5E5400A5C8;
+			remoteInfo = "※ikemen-iOS";
+		};
+		EF5BF6CB5EF7EF4AC9E00CC6B05E252F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1921CF546E73FECE642CC7BEE7738EBF;
+			remoteInfo = "※ikemen-watchOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0710078311439201E376B007E0A63D79 /* ※ikemen-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "※ikemen-umbrella.h"; sourceTree = "<group>"; };
-		0F5D0646B2785FD8D1928E465F6705CF /* ※ikemen.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "※ikemen.modulemap"; sourceTree = "<group>"; };
-		21B4228A66743D137527F4E7960F317B /* Pods-DOKIDOKI Rhythm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DOKIDOKI Rhythm-umbrella.h"; sourceTree = "<group>"; };
-		436E77503A1C747EF4484EB13F2BDDF6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
-		4CBB174B8CC0FFC23F559AAE2F2A4225 /* ※ikemen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "※ikemen.swift"; path = "Pod/Classes/※ikemen.swift"; sourceTree = "<group>"; };
-		4E17F521969ABF99C70356B0B10D3000 /* Pods-DOKIDOKI Rhythm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DOKIDOKI Rhythm-frameworks.sh"; sourceTree = "<group>"; };
-		5102665AB14123B4CDA258D069A5396D /* Pods-DOKIDOKI Rhythm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DOKIDOKI Rhythm-acknowledgements.markdown"; sourceTree = "<group>"; };
-		604D1464ED7364E7158638214A2E814D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		05297C9058A7C3146EE8B6AD3A84E32B /* Pods-DOKIDOKI Rhythm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DOKIDOKI Rhythm-dummy.m"; sourceTree = "<group>"; };
+		05E216D5E36A23E77FAEB1E396B36559 /* Ikemen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ikemen.framework; path = "※ikemen-watchOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EFC109B7F9250C6292BDB4137B400FA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16AE2CCD458A4E19DFFE7DD85F6BD2F5 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
+		27120934B1E747FB300FD8C7D4DE4B50 /* Pods-HeartbeatPlayer Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HeartbeatPlayer Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		277280A9D10364D4B85E2C01D395713F /* ※ikemen-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "※ikemen-iOS-prefix.pch"; sourceTree = "<group>"; };
+		291BC47B07744215A1095CF3C99E04B1 /* ※ikemen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "※ikemen.swift"; path = "Pod/Classes/※ikemen.swift"; sourceTree = "<group>"; };
+		3660C31B229785811E37CE567CD21F6A /* Pods-HeartbeatPlayer Extension-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartbeatPlayer Extension-resources.sh"; sourceTree = "<group>"; };
+		398660F9EE245C0F0B8A7DCD4A49A1ED /* ※ikemen-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "※ikemen-iOS.modulemap"; sourceTree = "<group>"; };
+		3B227366BEE0102F396C5F7842FEE68C /* ※ikemen-watchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; name = "※ikemen-watchOS.modulemap"; path = "../※ikemen-watchOS/※ikemen-watchOS.modulemap"; sourceTree = "<group>"; };
+		4714676369D0A6D350BFCBFAF8C6D46D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../※ikemen-watchOS/Info.plist"; sourceTree = "<group>"; };
+		4CEF056660F6C7CCCA42F8152B9EB3BB /* ※ikemen-watchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "※ikemen-watchOS-umbrella.h"; path = "../※ikemen-watchOS/※ikemen-watchOS-umbrella.h"; sourceTree = "<group>"; };
+		4E01C9478BF23AF01CA9A53CC22D8E1A /* ※ikemen-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "※ikemen-iOS.xcconfig"; sourceTree = "<group>"; };
+		5047C622F0489F275F34EB5449134D4A /* Pods-DOKIDOKI Rhythm-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DOKIDOKI Rhythm-umbrella.h"; sourceTree = "<group>"; };
+		50D52E7A25936DC11D710157BF6A7117 /* Ikemen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ikemen.framework; path = "※ikemen-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F5CCC55484CC0D26C0757225632EE23 /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DOKIDOKI_Rhythm.framework; path = "Pods-DOKIDOKI Rhythm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A19891683EE67B3A51AA1246493AA0 /* Pods-DOKIDOKI Rhythm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DOKIDOKI Rhythm-resources.sh"; sourceTree = "<group>"; };
+		681987D96DF6238BFB84CAB70D252248 /* Pods-DOKIDOKI Rhythm-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DOKIDOKI Rhythm-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6EAE9FFB77C107446678567A7CD56264 /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
+		76720B026417625FB62285B73CECF0BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		811B95F521D87B18F7F415976566937F /* Pods_HeartbeatPlayer_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HeartbeatPlayer_Extension.framework; path = "Pods-HeartbeatPlayer Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D473ABADD60713A729C6738697153F /* Pods-HeartbeatPlayer Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HeartbeatPlayer Extension-umbrella.h"; sourceTree = "<group>"; };
+		87D71107491035ADDEDFB79BE4452B01 /* Pods-HeartbeatPlayer Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartbeatPlayer Extension.release.xcconfig"; sourceTree = "<group>"; };
+		8807C957811503958EDD8769517D4F34 /* ※ikemen-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "※ikemen-iOS-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9EA0B8F1AC499FDDAB0C72371C92C652 /* Ikemen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Ikemen.framework; path = "※ikemen.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD8F40234234F5340863FC1EED53970B /* Pods-DOKIDOKI Rhythm-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DOKIDOKI Rhythm-resources.sh"; sourceTree = "<group>"; };
-		B2B1F8FD7E9C030AC5E05726DCDA09A0 /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DOKIDOKI_Rhythm.framework; path = "Pods-DOKIDOKI Rhythm.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B753ACAA1CAAFAAA9E660B15E9169C9B /* Pods-DOKIDOKI Rhythm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DOKIDOKI Rhythm-acknowledgements.plist"; sourceTree = "<group>"; };
-		B95C6B11E97768F8CAE604B1F89D8263 /* ※ikemen.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "※ikemen.xcconfig"; sourceTree = "<group>"; };
-		B9C1E1375BA7795BE5986999AFAFD571 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBC219BAEE97854D9363E3160772970F /* Pods-DOKIDOKI Rhythm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DOKIDOKI Rhythm.release.xcconfig"; sourceTree = "<group>"; };
-		CD0E5DB07FCB5D8407E9C81E07712352 /* ※ikemen-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "※ikemen-prefix.pch"; sourceTree = "<group>"; };
-		D15378F69869B8B1215848F9C07829B8 /* ※ikemen-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "※ikemen-dummy.m"; sourceTree = "<group>"; };
-		DAED445D5A50036ADB8EA65DE4AE8D88 /* Pods-DOKIDOKI Rhythm-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DOKIDOKI Rhythm-dummy.m"; sourceTree = "<group>"; };
-		E1734F8EB598D2E69B2FA138538196C3 /* Pods-DOKIDOKI Rhythm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DOKIDOKI Rhythm.modulemap"; sourceTree = "<group>"; };
+		9A25F1F2F751A4446D7877CF7A1497AD /* ※ikemen-watchOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "※ikemen-watchOS.xcconfig"; path = "../※ikemen-watchOS/※ikemen-watchOS.xcconfig"; sourceTree = "<group>"; };
+		9C4BBD5F82713DFD2D3955F9CEE5121D /* ※ikemen-watchOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "※ikemen-watchOS-prefix.pch"; path = "../※ikemen-watchOS/※ikemen-watchOS-prefix.pch"; sourceTree = "<group>"; };
+		9D0BF1930270CBB4B30E0EEFF6FA68F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EDB0C8491A0357BA137169BAE8371B7 /* Pods-HeartbeatPlayer Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-HeartbeatPlayer Extension.modulemap"; sourceTree = "<group>"; };
+		A82640CD81BA5526F0115A6C326EBF8E /* Pods-HeartbeatPlayer Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HeartbeatPlayer Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		AB9684560BB9B5657A870E62598AC4B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61CA2D21D891EAFC118584AC563AB55 /* Pods-DOKIDOKI Rhythm.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DOKIDOKI Rhythm.modulemap"; sourceTree = "<group>"; };
+		C813F720654FA721A4F57D6A0BF1057C /* Pods-HeartbeatPlayer Extension-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HeartbeatPlayer Extension-frameworks.sh"; sourceTree = "<group>"; };
+		D01E2E937AAA9A14642430257DF97404 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HeartbeatPlayer Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D61414620CB3877D1BDE9AD39EC91E94 /* Pods-HeartbeatPlayer Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HeartbeatPlayer Extension-dummy.m"; sourceTree = "<group>"; };
+		E0653782660BB207E22F2CB8BDD4BBFE /* Pods-DOKIDOKI Rhythm-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DOKIDOKI Rhythm-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE021AF79C0EF002A6A2E556EAE7DFE1 /* ※ikemen-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "※ikemen-iOS-dummy.m"; sourceTree = "<group>"; };
+		F4F20E56BAC57B883207DE3C6884C608 /* Pods-DOKIDOKI Rhythm-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DOKIDOKI Rhythm-frameworks.sh"; sourceTree = "<group>"; };
+		F86899138853094B41EF2D6E1BD6ABA0 /* ※ikemen-watchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "※ikemen-watchOS-dummy.m"; path = "../※ikemen-watchOS/※ikemen-watchOS-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2BE1F9DCD130E6065EE931AF201C747E /* Frameworks */ = {
+		6A4359A0CE07F1B7A9A9BFE8885BD558 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				534D83E0CB8B7511BA7761AF29EBD977 /* Foundation.framework in Frameworks */,
+				0DA3E23DDF900E8CD8A47E3625DBA51D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFF165B00FE1C8B3426F942F75DFD591 /* Frameworks */ = {
+		6C9FCD7E265AACAB90DDEF74DAE103DB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E9A31D5740D19B7BEE73A3DC4CE8DA /* Foundation.framework in Frameworks */,
+				3AEB68B47CA48E91B7D476B1ED0DE75E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9465E494338BC5D40505EAEB13DCC497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E64F6FC1F50BB361F1D55AAB76E6AD18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF0B1453E3EAB095AAB2AAFACE73666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC43F3F37B2E21B3E7322F1A1E74F892 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22C792A5F9ABCEA2253DADB558F7315D /* Pods-DOKIDOKI Rhythm */ = {
+		17E19638E34F661C1DB64E8DD163138F /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				604D1464ED7364E7158638214A2E814D /* Info.plist */,
-				E1734F8EB598D2E69B2FA138538196C3 /* Pods-DOKIDOKI Rhythm.modulemap */,
-				5102665AB14123B4CDA258D069A5396D /* Pods-DOKIDOKI Rhythm-acknowledgements.markdown */,
-				B753ACAA1CAAFAAA9E660B15E9169C9B /* Pods-DOKIDOKI Rhythm-acknowledgements.plist */,
-				DAED445D5A50036ADB8EA65DE4AE8D88 /* Pods-DOKIDOKI Rhythm-dummy.m */,
-				4E17F521969ABF99C70356B0B10D3000 /* Pods-DOKIDOKI Rhythm-frameworks.sh */,
-				AD8F40234234F5340863FC1EED53970B /* Pods-DOKIDOKI Rhythm-resources.sh */,
-				21B4228A66743D137527F4E7960F317B /* Pods-DOKIDOKI Rhythm-umbrella.h */,
-				436E77503A1C747EF4484EB13F2BDDF6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */,
-				BBC219BAEE97854D9363E3160772970F /* Pods-DOKIDOKI Rhythm.release.xcconfig */,
+				314BDBFF8A1153B1EAEDE5E51D0049D3 /* Pods-DOKIDOKI Rhythm */,
+				6D7AD02FAF57308E5339DAE044C2B228 /* Pods-HeartbeatPlayer Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		314BDBFF8A1153B1EAEDE5E51D0049D3 /* Pods-DOKIDOKI Rhythm */ = {
+			isa = PBXGroup;
+			children = (
+				0EFC109B7F9250C6292BDB4137B400FA /* Info.plist */,
+				C61CA2D21D891EAFC118584AC563AB55 /* Pods-DOKIDOKI Rhythm.modulemap */,
+				681987D96DF6238BFB84CAB70D252248 /* Pods-DOKIDOKI Rhythm-acknowledgements.markdown */,
+				E0653782660BB207E22F2CB8BDD4BBFE /* Pods-DOKIDOKI Rhythm-acknowledgements.plist */,
+				05297C9058A7C3146EE8B6AD3A84E32B /* Pods-DOKIDOKI Rhythm-dummy.m */,
+				F4F20E56BAC57B883207DE3C6884C608 /* Pods-DOKIDOKI Rhythm-frameworks.sh */,
+				62A19891683EE67B3A51AA1246493AA0 /* Pods-DOKIDOKI Rhythm-resources.sh */,
+				5047C622F0489F275F34EB5449134D4A /* Pods-DOKIDOKI Rhythm-umbrella.h */,
+				16AE2CCD458A4E19DFFE7DD85F6BD2F5 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */,
+				6EAE9FFB77C107446678567A7CD56264 /* Pods-DOKIDOKI Rhythm.release.xcconfig */,
 			);
 			name = "Pods-DOKIDOKI Rhythm";
 			path = "Target Support Files/Pods-DOKIDOKI Rhythm";
@@ -91,134 +149,212 @@
 		35BE3E11C932ACE9E786DE45E73B5741 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F63B29F444418088507E7943F536EFFC /* ※ikemen */,
+				72A941899B75F9CB525C46254B210640 /* ※ikemen */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		70FE3CD26F6F3D8A7317CD8349FD7B9A /* Products */ = {
+		482EA88B9136A5A573514953C7FCB52D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				9EA0B8F1AC499FDDAB0C72371C92C652 /* Ikemen.framework */,
-				B2B1F8FD7E9C030AC5E05726DCDA09A0 /* Pods_DOKIDOKI_Rhythm.framework */,
+				D0FDE7E6C756FE51216AA3F19811305B /* Foundation.framework */,
 			);
-			name = Products;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		73E46E5AC42FEF408C6D9FEA0FB1CD04 /* Support Files */ = {
+		6D7AD02FAF57308E5339DAE044C2B228 /* Pods-HeartbeatPlayer Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B9C1E1375BA7795BE5986999AFAFD571 /* Info.plist */,
-				0F5D0646B2785FD8D1928E465F6705CF /* ※ikemen.modulemap */,
-				B95C6B11E97768F8CAE604B1F89D8263 /* ※ikemen.xcconfig */,
-				D15378F69869B8B1215848F9C07829B8 /* ※ikemen-dummy.m */,
-				CD0E5DB07FCB5D8407E9C81E07712352 /* ※ikemen-prefix.pch */,
-				0710078311439201E376B007E0A63D79 /* ※ikemen-umbrella.h */,
+				AB9684560BB9B5657A870E62598AC4B3 /* Info.plist */,
+				9EDB0C8491A0357BA137169BAE8371B7 /* Pods-HeartbeatPlayer Extension.modulemap */,
+				27120934B1E747FB300FD8C7D4DE4B50 /* Pods-HeartbeatPlayer Extension-acknowledgements.markdown */,
+				A82640CD81BA5526F0115A6C326EBF8E /* Pods-HeartbeatPlayer Extension-acknowledgements.plist */,
+				D61414620CB3877D1BDE9AD39EC91E94 /* Pods-HeartbeatPlayer Extension-dummy.m */,
+				C813F720654FA721A4F57D6A0BF1057C /* Pods-HeartbeatPlayer Extension-frameworks.sh */,
+				3660C31B229785811E37CE567CD21F6A /* Pods-HeartbeatPlayer Extension-resources.sh */,
+				87D473ABADD60713A729C6738697153F /* Pods-HeartbeatPlayer Extension-umbrella.h */,
+				D01E2E937AAA9A14642430257DF97404 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */,
+				87D71107491035ADDEDFB79BE4452B01 /* Pods-HeartbeatPlayer Extension.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/※ikemen";
+			name = "Pods-HeartbeatPlayer Extension";
+			path = "Target Support Files/Pods-HeartbeatPlayer Extension";
+			sourceTree = "<group>";
+		};
+		72A941899B75F9CB525C46254B210640 /* ※ikemen */ = {
+			isa = PBXGroup;
+			children = (
+				291BC47B07744215A1095CF3C99E04B1 /* ※ikemen.swift */,
+				869FFFF67F5F00D492C899CFD7AE8328 /* Support Files */,
+			);
+			name = "※ikemen";
+			path = "※ikemen";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8F91EE078EA3977443D1BDC2601132EF /* Frameworks */,
 				35BE3E11C932ACE9E786DE45E73B5741 /* Pods */,
-				70FE3CD26F6F3D8A7317CD8349FD7B9A /* Products */,
-				9C1F31509CF5889DF53A2F35028D0394 /* Targets Support Files */,
+				B95BB701F1A0A328ADDC1DACBE50646B /* Products */,
+				17E19638E34F661C1DB64E8DD163138F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9C1F31509CF5889DF53A2F35028D0394 /* Targets Support Files */ = {
+		869FFFF67F5F00D492C899CFD7AE8328 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				22C792A5F9ABCEA2253DADB558F7315D /* Pods-DOKIDOKI Rhythm */,
+				9D0BF1930270CBB4B30E0EEFF6FA68F2 /* Info.plist */,
+				4714676369D0A6D350BFCBFAF8C6D46D /* Info.plist */,
+				398660F9EE245C0F0B8A7DCD4A49A1ED /* ※ikemen-iOS.modulemap */,
+				4E01C9478BF23AF01CA9A53CC22D8E1A /* ※ikemen-iOS.xcconfig */,
+				EE021AF79C0EF002A6A2E556EAE7DFE1 /* ※ikemen-iOS-dummy.m */,
+				277280A9D10364D4B85E2C01D395713F /* ※ikemen-iOS-prefix.pch */,
+				8807C957811503958EDD8769517D4F34 /* ※ikemen-iOS-umbrella.h */,
+				3B227366BEE0102F396C5F7842FEE68C /* ※ikemen-watchOS.modulemap */,
+				9A25F1F2F751A4446D7877CF7A1497AD /* ※ikemen-watchOS.xcconfig */,
+				F86899138853094B41EF2D6E1BD6ABA0 /* ※ikemen-watchOS-dummy.m */,
+				9C4BBD5F82713DFD2D3955F9CEE5121D /* ※ikemen-watchOS-prefix.pch */,
+				4CEF056660F6C7CCCA42F8152B9EB3BB /* ※ikemen-watchOS-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/※ikemen-iOS";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8F91EE078EA3977443D1BDC2601132EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				482EA88B9136A5A573514953C7FCB52D /* iOS */,
+				FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		B95BB701F1A0A328ADDC1DACBE50646B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				50D52E7A25936DC11D710157BF6A7117 /* Ikemen.framework */,
+				05E216D5E36A23E77FAEB1E396B36559 /* Ikemen.framework */,
+				5F5CCC55484CC0D26C0757225632EE23 /* Pods_DOKIDOKI_Rhythm.framework */,
+				811B95F521D87B18F7F415976566937F /* Pods_HeartbeatPlayer_Extension.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		F63B29F444418088507E7943F536EFFC /* ※ikemen */ = {
+		FD9E2CBABDA1AB35BAD3C3F041262069 /* watchOS */ = {
 			isa = PBXGroup;
 			children = (
-				4CBB174B8CC0FFC23F559AAE2F2A4225 /* ※ikemen.swift */,
-				73E46E5AC42FEF408C6D9FEA0FB1CD04 /* Support Files */,
+				76720B026417625FB62285B73CECF0BF /* Foundation.framework */,
 			);
-			name = "※ikemen";
-			path = "※ikemen";
+			name = watchOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		46966EF7668D325CDE187825FFC82500 /* Headers */ = {
+		22594C0C0C9ADA090F2B14E80572612D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB8C43E92AD5A9201A07C5CEF69F9CED /* Pods-DOKIDOKI Rhythm-umbrella.h in Headers */,
+				FC4D93C9001A76E3DB8EBF5DBFEF49E8 /* Pods-DOKIDOKI Rhythm-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C148D580EB3F7B68D856E925858B015E /* Headers */ = {
+		D379F70B6011F0E8489B99D82E71A185 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39504F632EA0F9B40AE711F26B881E42 /* ※ikemen-umbrella.h in Headers */,
+				DE983A894EAABA86AA9A5F54832ED8F4 /* ※ikemen-watchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E203BFA3FB7FAA3E3D8C724514E57D13 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				738CF2E5A64653D5335F6AB41D79BCC0 /* Pods-HeartbeatPlayer Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDE38F237C0572E148F4AAC9B162DA5B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA0ADE63BA2060F970FC77424D3AD715 /* ※ikemen-iOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4321759387FBCD6E7EC2071E5028A67F /* ※ikemen */ = {
+		0AE148488AACD01AE7CFD591803B1F30 /* Pods-DOKIDOKI Rhythm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83E83C58B75DDD5ABD87DB191DD9E9FC /* Build configuration list for PBXNativeTarget "※ikemen" */;
+			buildConfigurationList = 369ACE4835529183E15EE99B3A40595F /* Build configuration list for PBXNativeTarget "Pods-DOKIDOKI Rhythm" */;
 			buildPhases = (
-				F9C71442492174E445EB768E36CC91B1 /* Sources */,
-				EFF165B00FE1C8B3426F942F75DFD591 /* Frameworks */,
-				C148D580EB3F7B68D856E925858B015E /* Headers */,
+				37A562E485454447ACB1122E4BFF74AF /* Sources */,
+				9465E494338BC5D40505EAEB13DCC497 /* Frameworks */,
+				22594C0C0C9ADA090F2B14E80572612D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "※ikemen";
-			productName = "※ikemen";
-			productReference = 9EA0B8F1AC499FDDAB0C72371C92C652 /* Ikemen.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C2801EDB41563062A5C3A95AC2C9A9EC /* Pods-DOKIDOKI Rhythm */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C694A64D347C91FE384DBE2EFB5FAD84 /* Build configuration list for PBXNativeTarget "Pods-DOKIDOKI Rhythm" */;
-			buildPhases = (
-				182B5287D2EA194FF50DB0B171463F12 /* Sources */,
-				2BE1F9DCD130E6065EE931AF201C747E /* Frameworks */,
-				46966EF7668D325CDE187825FFC82500 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8B40DC9D477A9A3799B1AA1BDF9BBC0B /* PBXTargetDependency */,
+				D7DA05D15427CA5310C6DB43133D18F7 /* PBXTargetDependency */,
 			);
 			name = "Pods-DOKIDOKI Rhythm";
 			productName = "Pods-DOKIDOKI Rhythm";
-			productReference = B2B1F8FD7E9C030AC5E05726DCDA09A0 /* Pods_DOKIDOKI_Rhythm.framework */;
+			productReference = 5F5CCC55484CC0D26C0757225632EE23 /* Pods_DOKIDOKI_Rhythm.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1921CF546E73FECE642CC7BEE7738EBF /* ※ikemen-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD29510AFD8CC2EFAE4B3BE8F7200600 /* Build configuration list for PBXNativeTarget "※ikemen-watchOS" */;
+			buildPhases = (
+				B69ED12A55CD98F5AE65D2FE1C72EE7F /* Sources */,
+				CEF0B1453E3EAB095AAB2AAFACE73666 /* Frameworks */,
+				D379F70B6011F0E8489B99D82E71A185 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "※ikemen-watchOS";
+			productName = "※ikemen-watchOS";
+			productReference = 05E216D5E36A23E77FAEB1E396B36559 /* Ikemen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		208BB336B94A2D60890B7F5E5400A5C8 /* ※ikemen-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02BA20C67AC1FBEA92E014FA2F599406 /* Build configuration list for PBXNativeTarget "※ikemen-iOS" */;
+			buildPhases = (
+				8B75B3CD194DADE9813E18AAA4DA7CD6 /* Sources */,
+				6C9FCD7E265AACAB90DDEF74DAE103DB /* Frameworks */,
+				EDE38F237C0572E148F4AAC9B162DA5B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "※ikemen-iOS";
+			productName = "※ikemen-iOS";
+			productReference = 50D52E7A25936DC11D710157BF6A7117 /* Ikemen.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		74C77D1AABD0E647E37949E7C1D6C8DD /* Pods-HeartbeatPlayer Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F6D824E3A6E69642AECCEA604E9E2C6 /* Build configuration list for PBXNativeTarget "Pods-HeartbeatPlayer Extension" */;
+			buildPhases = (
+				7CD46F759B1AFFA7BB5E4BD00C0ECA5C /* Sources */,
+				6A4359A0CE07F1B7A9A9BFE8885BD558 /* Frameworks */,
+				E203BFA3FB7FAA3E3D8C724514E57D13 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E307BCF5BC3EFDBD40EFBD7477F896CD /* PBXTargetDependency */,
+			);
+			name = "Pods-HeartbeatPlayer Extension";
+			productName = "Pods-HeartbeatPlayer Extension";
+			productReference = 811B95F521D87B18F7F415976566937F /* Pods_HeartbeatPlayer_Extension.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -238,47 +374,147 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 70FE3CD26F6F3D8A7317CD8349FD7B9A /* Products */;
+			productRefGroup = B95BB701F1A0A328ADDC1DACBE50646B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2801EDB41563062A5C3A95AC2C9A9EC /* Pods-DOKIDOKI Rhythm */,
-				4321759387FBCD6E7EC2071E5028A67F /* ※ikemen */,
+				0AE148488AACD01AE7CFD591803B1F30 /* Pods-DOKIDOKI Rhythm */,
+				74C77D1AABD0E647E37949E7C1D6C8DD /* Pods-HeartbeatPlayer Extension */,
+				208BB336B94A2D60890B7F5E5400A5C8 /* ※ikemen-iOS */,
+				1921CF546E73FECE642CC7BEE7738EBF /* ※ikemen-watchOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		182B5287D2EA194FF50DB0B171463F12 /* Sources */ = {
+		37A562E485454447ACB1122E4BFF74AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75706D5A8D4D87602410C6A2E88340C /* Pods-DOKIDOKI Rhythm-dummy.m in Sources */,
+				660A378DE9DB59961E2FE1FC0850CD84 /* Pods-DOKIDOKI Rhythm-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F9C71442492174E445EB768E36CC91B1 /* Sources */ = {
+		7CD46F759B1AFFA7BB5E4BD00C0ECA5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79DA1B658B0C665FDE13F2033834BDEE /* ※ikemen-dummy.m in Sources */,
-				ADEAEA57BF1372236C781656D808CB48 /* ※ikemen.swift in Sources */,
+				4C1F0C24FDC12360CAD3EAEA908DCCFF /* Pods-HeartbeatPlayer Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B75B3CD194DADE9813E18AAA4DA7CD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87AD55238184DD7531F824D74EF4C8E6 /* ※ikemen-iOS-dummy.m in Sources */,
+				B389DD5AC09FE9893133F9F290933B03 /* ※ikemen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B69ED12A55CD98F5AE65D2FE1C72EE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341190FD8AD9435BAA778010D2167276 /* ※ikemen-watchOS-dummy.m in Sources */,
+				77E3154EBFB12E46B474225449F60F59 /* ※ikemen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8B40DC9D477A9A3799B1AA1BDF9BBC0B /* PBXTargetDependency */ = {
+		D7DA05D15427CA5310C6DB43133D18F7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "※ikemen";
-			target = 4321759387FBCD6E7EC2071E5028A67F /* ※ikemen */;
-			targetProxy = 1E49C5CB14DEDBAA3C256CBA0B84357B /* PBXContainerItemProxy */;
+			name = "※ikemen-iOS";
+			target = 208BB336B94A2D60890B7F5E5400A5C8 /* ※ikemen-iOS */;
+			targetProxy = 1E56EFA742AAC6347301E2F9AAE5FD64 /* PBXContainerItemProxy */;
+		};
+		E307BCF5BC3EFDBD40EFBD7477F896CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "※ikemen-watchOS";
+			target = 1921CF546E73FECE642CC7BEE7738EBF /* ※ikemen-watchOS */;
+			targetProxy = EF5BF6CB5EF7EF4AC9E00CC6B05E252F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+		056420E0B4EAD0F26685F08BEDED6919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D71107491035ADDEDFB79BE4452B01 /* Pods-HeartbeatPlayer Extension.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartbeatPlayer Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HeartbeatPlayer_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		25D534AAFFC3A46CA8A851499EF7EDDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A25F1F2F751A4446D7877CF7A1497AD /* ※ikemen-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/※ikemen-watchOS/※ikemen-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/※ikemen-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/※ikemen-watchOS/※ikemen-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Ikemen;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		3A76ECC08A7617D20F91B16109937718 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,84 +555,11 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
-		8BE3E820497D7341BFBE8C7EAE315503 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 436E77503A1C747EF4484EB13F2BDDF6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DOKIDOKI Rhythm/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_DOKIDOKI_Rhythm;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A60358E3474669942E71DE90C33BB15D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B95C6B11E97768F8CAE604B1F89D8263 /* ※ikemen.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/※ikemen/※ikemen-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/※ikemen/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/※ikemen/※ikemen.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Ikemen;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
+		3C9DB462BAEBEC487A1F4A7A072C14BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,12 +605,13 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
-		D5BA6CF384B6AD9AE9EA2B42AFEC3EAF /* Debug */ = {
+		8B687E183D8F2E227E8965FF09CE1DF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B95C6B11E97768F8CAE604B1F89D8263 /* ※ikemen.xcconfig */;
+			baseConfigurationReference = 4E01C9478BF23AF01CA9A53CC22D8E1A /* ※ikemen-iOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -461,12 +625,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/※ikemen/※ikemen-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/※ikemen/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/※ikemen-iOS/※ikemen-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/※ikemen-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/※ikemen/※ikemen.modulemap";
+				MODULEMAP_FILE = "Target Support Files/※ikemen-iOS/※ikemen-iOS.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = Ikemen;
 				SDKROOT = iphoneos;
@@ -480,9 +644,159 @@
 			};
 			name = Debug;
 		};
-		FD59530941AFF748F51BBDC7D388FCEB /* Release */ = {
+		8FD3BEC30B16AA881143870F8D4A7667 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BBC219BAEE97854D9363E3160772970F /* Pods-DOKIDOKI Rhythm.release.xcconfig */;
+			baseConfigurationReference = D01E2E937AAA9A14642430257DF97404 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-HeartbeatPlayer Extension/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_HeartbeatPlayer_Extension;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		C6EB591E8BE3C5D43EEBBC6B4E72899D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A25F1F2F751A4446D7877CF7A1497AD /* ※ikemen-watchOS.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/※ikemen-watchOS/※ikemen-watchOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/※ikemen-watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/※ikemen-watchOS/※ikemen-watchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Ikemen;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		C788F1977025B9C1056E1799CE0A1BAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16AE2CCD458A4E19DFFE7DD85F6BD2F5 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DOKIDOKI Rhythm/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DOKIDOKI_Rhythm;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED41F13111232920EDF18FDACECB515D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E01C9478BF23AF01CA9A53CC22D8E1A /* ※ikemen-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/※ikemen-iOS/※ikemen-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/※ikemen-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/※ikemen-iOS/※ikemen-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Ikemen;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8F92BD9ED04F65BED75F2B0B130B57F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EAE9FFB77C107446678567A7CD56264 /* Pods-DOKIDOKI Rhythm.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -521,29 +835,47 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02BA20C67AC1FBEA92E014FA2F599406 /* Build configuration list for PBXNativeTarget "※ikemen-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B687E183D8F2E227E8965FF09CE1DF1 /* Debug */,
+				ED41F13111232920EDF18FDACECB515D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
-				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+				3C9DB462BAEBEC487A1F4A7A072C14BB /* Debug */,
+				3A76ECC08A7617D20F91B16109937718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83E83C58B75DDD5ABD87DB191DD9E9FC /* Build configuration list for PBXNativeTarget "※ikemen" */ = {
+		369ACE4835529183E15EE99B3A40595F /* Build configuration list for PBXNativeTarget "Pods-DOKIDOKI Rhythm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D5BA6CF384B6AD9AE9EA2B42AFEC3EAF /* Debug */,
-				A60358E3474669942E71DE90C33BB15D /* Release */,
+				C788F1977025B9C1056E1799CE0A1BAB /* Debug */,
+				F8F92BD9ED04F65BED75F2B0B130B57F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C694A64D347C91FE384DBE2EFB5FAD84 /* Build configuration list for PBXNativeTarget "Pods-DOKIDOKI Rhythm" */ = {
+		3F6D824E3A6E69642AECCEA604E9E2C6 /* Build configuration list for PBXNativeTarget "Pods-HeartbeatPlayer Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8BE3E820497D7341BFBE8C7EAE315503 /* Debug */,
-				FD59530941AFF748F51BBDC7D388FCEB /* Release */,
+				8FD3BEC30B16AA881143870F8D4A7667 /* Debug */,
+				056420E0B4EAD0F26685F08BEDED6919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD29510AFD8CC2EFAE4B3BE8F7200600 /* Build configuration list for PBXNativeTarget "※ikemen-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6EB591E8BE3C5D43EEBBC6B4E72899D /* Debug */,
+				25D534AAFFC3A46CA8A851499EF7EDDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
