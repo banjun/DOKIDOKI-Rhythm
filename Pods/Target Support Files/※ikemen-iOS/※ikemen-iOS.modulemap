@@ -1,5 +1,5 @@
 framework module Ikemen {
-  umbrella header "※ikemen-umbrella.h"
+  umbrella header "※ikemen-iOS-umbrella.h"
 
   export *
   module * { export * }
