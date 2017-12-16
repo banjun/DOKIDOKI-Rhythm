@@ -8,6 +8,7 @@ target 'DOKIDOKI Rhythm' do
   pod 'NorthLayout'
   pod 'Eureka'
   pod 'ReactiveCocoa'
+  pod 'BrightFutures'
 end
 
 target 'HeartbeatPlayer Extension' do

@@ -1,4 +1,6 @@
 PODS:
+  - BrightFutures (6.0.0):
+    - Result (~> 3.2.4)
   - Eureka (4.0.1)
   - FootlessParser (0.4.1)
   - NorthLayout (5.0.0):
@@ -11,12 +13,14 @@ PODS:
   - ※ikemen (0.4.0)
 
 DEPENDENCIES:
+  - BrightFutures
   - Eureka
   - NorthLayout
   - ReactiveCocoa
   - ※ikemen
 
 SPEC CHECKSUMS:
+  BrightFutures: 9e7604f511aed9f0d6a49b04ac9b3fca6b117758
   Eureka: c8bd5cc07143b6f66268c208d28a246c99b41955
   FootlessParser: 4705a9a740675b7439d9563f2fad83f7b84fc773
   NorthLayout: 718fecaf16d90c82788e452b1280ff3d39c193c5
@@ -25,6 +29,6 @@ SPEC CHECKSUMS:
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   ※ikemen: ed8e95f1268495c5416fd343edb9c88232cb62dd
 
-PODFILE CHECKSUM: 3205602d9abed28a9c9c10ad9baf9c5015de75d9
+PODFILE CHECKSUM: 1220ee0af46d0fbc15a845ca2e2a89a3b282417d
 
 COCOAPODS: 1.3.1
