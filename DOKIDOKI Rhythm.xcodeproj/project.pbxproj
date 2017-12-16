@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A5C8DB1FE4E65E00B2ACB0 /* PlayerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */; };
 		190BBB877D668A8A41A7FD2E /* Pods_DOKIDOKI_Rhythm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */; };
 		DCE59A21E44AA3DBC6E90CA0 /* Pods_HeartbeatPlayer_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9E4ABFCFB8AB02469BCE48 /* Pods_HeartbeatPlayer_Extension.framework */; };
 		EA1908791FE4CFF900AE0416 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA1908781FE4CFF900AE0416 /* HealthKit.framework */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		0A6C735A7401AEE097442D30 /* Pods-HeartbeatPlayer Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartbeatPlayer Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSession.swift; sourceTree = "<group>"; };
 		26BE08CF4795255191F0D1D6 /* Pods-DOKIDOKI Rhythm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DOKIDOKI Rhythm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DOKIDOKI Rhythm/Pods-DOKIDOKI Rhythm.debug.xcconfig"; sourceTree = "<group>"; };
 		36AC7B67AC5FC6BF895E523D /* Pods-HeartbeatPlayer Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeartbeatPlayer Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-HeartbeatPlayer Extension/Pods-HeartbeatPlayer Extension.release.xcconfig"; sourceTree = "<group>"; };
 		5898A1F7FEE55BDA2EE1B2FE /* Pods_DOKIDOKI_Rhythm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DOKIDOKI_Rhythm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +207,7 @@
 				EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */,
 				EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */,
 				EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */,
+				13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */,
 				EAD8C9A11F73E95D005665F1 /* Assets.xcassets */,
 				EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */,
 				EAD8C9A61F73E95D005665F1 /* Info.plist */,
@@ -498,6 +501,7 @@
 				EA630FDE1FE4E72700418EB8 /* PlaylistRow.swift in Sources */,
 				EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */,
 				EA630FD81FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */,
+				13A5C8DB1FE4E65E00B2ACB0 /* PlayerSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

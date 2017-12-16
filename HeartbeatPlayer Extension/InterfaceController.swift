@@ -8,6 +8,7 @@
 
 import Foundation
 import HealthKit
+import WatchConnectivity
 import WatchKit
 import Ikemen
 
@@ -25,7 +26,12 @@ class InterfaceController: WKInterfaceController {
 
     override func willActivate() {
         super.willActivate()
-        startWorkout()
+
+        if (WCSession.isSupported()) {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
     }
 
     override func didDeactivate() {
@@ -68,5 +74,14 @@ extension InterfaceController: HKWorkoutSessionDelegate {
             hapticFeedbackTimer?.invalidate()
             hapticFeedbackTimer = nil
         }
+    }
+}
+
+extension InterfaceController: WCSessionDelegate {
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    }
+
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Swift.Void) {
+        NSLog("\(message)")
     }
 }
