@@ -11,7 +11,11 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
     }
     let heartLabel = UILabel() ※ { l in
         l.font = .boldSystemFont(ofSize: 16)
-        l.textColor = .magenta
+        l.textColor = .systemPink
+    }
+    let audioLevelLabel = UILabel() ※ { l in
+        l.font = .boldSystemFont(ofSize: 16)
+        l.textColor = .systemBlue
     }
 
     required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -24,20 +28,32 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
         let autolayout = contentView.northLayoutFormat([:], [
             "title": titleLabel,
             "date": dateLabel,
-            "heart": heartLabel])
-        autolayout("H:||[title]-[heart]||")
-        autolayout("H:||[date]-[heart]||")
+            "heart": heartLabel,
+            "audio": audioLevelLabel])
+        autolayout("H:||[title]-(>=8)-[heart]||")
+        autolayout("H:||[title]-(>=8)-[audio]||")
+        autolayout("H:||[date]-(>=8)-[heart]||")
+        autolayout("H:||[date]-(>=8)-[audio]||")
         autolayout("V:||[title]-[date]||")
-        autolayout("V:||[heart]||")
-        heartLabel.setContentHuggingPriority(.required, for: .horizontal)
+        autolayout("V:||[heart]-[audio(==heart)]||")
+        heartLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
+        audioLevelLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
 
         selectionStyle = .default
     }
 
     override func update() {
-        titleLabel.text = row.value?.title
-        dateLabel.text = row.value.map {(DateFormatter() ※ {$0.dateFormat = "yyyy-MM-dd HH:mm -"; $0.locale = Locale(identifier: "en_US_POSIX")}).string(from: $0.start)}
-        heartLabel.text = "💓" + ("\(row.value?.heartbeats.map {$0.heartrate}.max().map {String($0)} ?? "---")")
+        let value = row.value
+
+        titleLabel.text = value?.title
+        dateLabel.text = value.map {(DateFormatter() ※ {$0.dateFormat = "yyyy-MM-dd HH:mm -"; $0.locale = Locale(identifier: "en_US_POSIX")}).string(from: $0.start)}
+
+        let heartrates = value?.heartbeats.map {$0.heartrate}
+        let audioLevels = value?.audioLevels.map {$0.audioLevel} ?? []
+        let audioLevelInterval = [audioLevels.min(), audioLevels.max()].compactMap {$0}.map {String(Int(round($0)))}.joined(separator: " - ")
+
+        heartLabel.text = "💓" + ("\(heartrates?.max().map {"\($0) bpm"} ?? "---")")
+        audioLevelLabel.text = "🔊" + (!audioLevelInterval.isEmpty ? (audioLevelInterval + " dB") : "---")
     }
 }
 

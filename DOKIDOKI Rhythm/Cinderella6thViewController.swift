@@ -48,7 +48,7 @@ class Cinderella6thViewController: FormViewController {
 
                 let activity = DokiDokiActivity(title: title, start: start, heartbeats: qSamples.map { s in
                     DokiDokiActivity.TimedBeat(time: s.startDate, heartrate: Int(s.quantity.doubleValue(for: HKUnit(from: "count/min"))))
-                })
+                }, audioLevels: [])
 //                NSLog("%@", "\(activities)")
 //                let file =  URL(fileURLWithPath: NSHomeDirectory())
 //                    .appendingPathComponent("Library")
