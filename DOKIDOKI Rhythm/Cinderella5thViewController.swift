@@ -30,7 +30,6 @@ class Cinderella5thViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        tabBarItem.title = "Playlists"
         navigationItem.title = "CINDERELLA GIRLS 5thLIVE TOUR"
         navigationItem.largeTitleDisplayMode = .never
     }

@@ -9,10 +9,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow()
         window.rootViewController = UITabBarController() ※ {
             $0.viewControllers = [
-                UINavigationController(rootViewController: Cinderella5thViewController()) ※ {
+                UINavigationController(rootViewController: Cinderella7thViewController()) ※ {
+                    $0.tabBarItem.title = "7th"
                     $0.navigationBar.prefersLargeTitles = true},
-                UIViewController() ※ {$0.title = "2"},
-                UIViewController() ※ {$0.title = "3"}]
+                UINavigationController(rootViewController: Cinderella6thViewController()) ※ {
+                    $0.tabBarItem.title = "6th"
+                    $0.navigationBar.prefersLargeTitles = true},
+                UINavigationController(rootViewController: Cinderella5thViewController()) ※ {
+                    $0.tabBarItem.title = "5th"
+                    $0.navigationBar.prefersLargeTitles = true}]
         }
         window.makeKeyAndVisible()
         self.window = window
