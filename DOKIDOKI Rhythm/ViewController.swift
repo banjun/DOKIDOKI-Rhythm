@@ -4,7 +4,6 @@ import Eureka
 import NorthLayout
 import Ikemen
 import BrightFutures
-import Result
 import ReactiveSwift
 
 private let store = HKHealthStore()
@@ -30,7 +29,7 @@ class ViewController: FormViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].flatMap {$0}
+        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].compactMap {$0}
 
         store.requestAuthorization(toShare: nil, read: Set(typesToRead)) { granted, error in
             guard granted, error == nil else { NSLog("%@", "granted = \(granted), error = \(String(describing: error))"); return }
@@ -38,7 +37,7 @@ class ViewController: FormViewController {
         }
     }
 
-    private func activities(title: String, start: Date, end: Date) -> Future<DokiDokiActivity, NoError> {
+    private func activities(title: String, start: Date, end: Date) -> Future<DokiDokiActivity, Never> {
         return .init { resolve in
             let predicate = HKQuery.predicateForSamples(withStart: start, end: end, options: [])
 
@@ -79,10 +78,10 @@ class ViewController: FormViewController {
             ("SSA Day1", "2017-08-12T17:30:00+0900", "2017-08-12T22:30:00+0900"),
             ("SSA Day2", "2017-08-13T17:30:00+0900", "2017-08-13T22:30:00+0900")]
 
-        SignalProducer<(title: String, start: String, end: String), NoError>(periods)
+        SignalProducer<(title: String, start: String, end: String), Never>(periods)
             .map {($0.title, ISO8601DateFormatter().date(from: $0.start)!, ISO8601DateFormatter().date(from: $0.end)!)}
             .flatMap(.concat) { period in
-                SignalProducer<DokiDokiActivity, NoError> { observer, lifetime in
+                SignalProducer<DokiDokiActivity, Never> { observer, lifetime in
                     self.activities(title: period.0, start: period.1, end: period.2).onSuccess { a in
                         observer.send(value: a)
                         observer.sendCompleted()

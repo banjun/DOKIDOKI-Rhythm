@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'DOKIDOKI Rhythm' do
-  platform :ios, '11.0'
+  platform :ios, '13.0'
   use_frameworks!
 
   pod '※ikemen'
@@ -12,7 +12,7 @@ target 'DOKIDOKI Rhythm' do
 end
 
 target 'HeartbeatPlayer Extension' do
-  platform :watchos, '4.0'
+  platform :watchos, '6.0'
 
   pod '※ikemen'
 end
