@@ -8,12 +8,21 @@ import ReactiveSwift
 
 private let store = HKHealthStore()
 
-class ViewController: FormViewController {
+class Cinderella5thViewController: FormViewController {
+    let actionSection = Section()
     let activitiesSection = Section()
 
     init() {
         super.init(nibName: nil, bundle: nil)
-        form +++ activitiesSection
+        form
+            +++ actionSection
+            <<< ButtonRow {
+                $0.title = "Fetch"
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.setupHealthStore()
+                }
+            }
+            +++ activitiesSection
     }
 
     required init?(coder aDecoder: NSCoder) {fatalError()}
@@ -28,13 +37,6 @@ class ViewController: FormViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].compactMap {$0}
-
-        store.requestAuthorization(toShare: nil, read: Set(typesToRead)) { granted, error in
-            guard granted, error == nil else { NSLog("%@", "granted = \(granted), error = \(String(describing: error))"); return }
-            self.healthStoreDidSetup()
-        }
     }
 
     private func activities(title: String, start: Date, end: Date) -> Future<DokiDokiActivity, Never> {
@@ -57,6 +59,18 @@ class ViewController: FormViewController {
                 resolve(.success(activity))
             })
         }
+    }
+
+    private func setupHealthStore() {
+        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].compactMap {$0}
+
+        store.requestAuthorization(toShare: nil, read: Set(typesToRead)) { granted, error in
+            guard granted, error == nil else { NSLog("%@", "granted = \(granted), error = \(String(describing: error))"); return }
+            self.healthStoreDidSetup()
+        }
+
+        actionSection.first?.disabled = true
+        actionSection.first?.evaluateDisabled()
     }
 
     private func healthStoreDidSetup() {

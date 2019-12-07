@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow()
         window.rootViewController = UITabBarController() ※ {
             $0.viewControllers = [
-                UINavigationController(rootViewController: ViewController()) ※ {
+                UINavigationController(rootViewController: Cinderella5thViewController()) ※ {
                     $0.navigationBar.prefersLargeTitles = true},
                 UIViewController() ※ {$0.title = "2"},
                 UIViewController() ※ {$0.title = "3"}]
