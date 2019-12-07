@@ -30,6 +30,7 @@
 		EAD8C9AE1F73EEA2005665F1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */; };
 		EAF93DD6239B4AF200E6F09C /* Cinderella7thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD5239B49A300E6F09C /* Cinderella7thViewController.swift */; };
 		EAF93DD7239B4AF500E6F09C /* Cinderella6thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD4239B49A100E6F09C /* Cinderella6thViewController.swift */; };
+		EAF93DD9239B887F00E6F09C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD8239B887F00E6F09C /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		EAF93DD4239B49A100E6F09C /* Cinderella6thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinderella6thViewController.swift; sourceTree = "<group>"; };
 		EAF93DD5239B49A300E6F09C /* Cinderella7thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinderella7thViewController.swift; sourceTree = "<group>"; };
+		EAF93DD8239B887F00E6F09C /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 				EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */,
 				EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */,
 				EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */,
+				EAF93DD8239B887F00E6F09C /* GraphView.swift */,
 				13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */,
 				EAD8C9A11F73E95D005665F1 /* Assets.xcassets */,
 				EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */,
@@ -476,6 +479,7 @@
 			files = (
 				EAF93DD7239B4AF500E6F09C /* Cinderella6thViewController.swift in Sources */,
 				EAD8C99D1F73E95D005665F1 /* Cinderella5thViewController.swift in Sources */,
+				EAF93DD9239B887F00E6F09C /* GraphView.swift in Sources */,
 				EA630FDB1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift in Sources */,
 				EA630FDE1FE4E72700418EB8 /* PlaylistRow.swift in Sources */,
 				EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */,

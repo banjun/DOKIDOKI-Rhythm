@@ -17,6 +17,12 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
         l.font = .boldSystemFont(ofSize: 16)
         l.textColor = .systemBlue
     }
+    let heartGraph = GraphView(frame: .zero) ※ {
+        $0.strokeColor = .systemPink
+    }
+    let audioLevelGraph = GraphView(frame: .zero) ※ {
+        $0.strokeColor = .systemBlue
+    }
 
     required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -29,13 +35,17 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
             "title": titleLabel,
             "date": dateLabel,
             "heart": heartLabel,
-            "audio": audioLevelLabel])
+            "audio": audioLevelLabel,
+            "heartGraph": heartGraph,
+            "audioGraph": audioLevelGraph])
         autolayout("H:||[title]-(>=8)-[heart]||")
         autolayout("H:||[title]-(>=8)-[audio]||")
         autolayout("H:||[date]-(>=8)-[heart]||")
         autolayout("H:||[date]-(>=8)-[audio]||")
-        autolayout("V:||[title]-[date]||")
-        autolayout("V:||[heart]-[audio(==heart)]||")
+        autolayout("H:||[heartGraph]||")
+        autolayout("H:||[audioGraph]||")
+        autolayout("V:||[title]-[date]-(>=8)-[heartGraph(==48)]-[audioGraph(==48)]||")
+        autolayout("V:||[heart]-[audio(==heart)]-(>=8)-[heartGraph]")
         heartLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
         audioLevelLabel.setContentCompressionResistancePriority(.required, for: .horizontal)
 
@@ -54,6 +64,9 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
 
         heartLabel.text = "💓" + ("\(heartrates?.max().map {"\($0) bpm"} ?? "---")")
         audioLevelLabel.text = "🔊" + (!audioLevelInterval.isEmpty ? (audioLevelInterval + " dB") : "---")
+
+        heartGraph.data = (value?.heartbeats.map {($0.time, Double($0.heartrate))} ?? [], nil)
+        audioLevelGraph.data = (value?.audioLevels.map {($0.time, Double($0.audioLevel))} ?? [], nil)
     }
 }
 
