@@ -17,10 +17,10 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
         l.font = .boldSystemFont(ofSize: 16)
         l.textColor = .systemBlue
     }
-    let heartGraph = GraphView(frame: .zero) ※ {
+    let heartGraph = GraphView() ※ {
         $0.strokeColor = .systemPink
     }
-    let audioLevelGraph = GraphView(frame: .zero) ※ {
+    let audioLevelGraph = GraphView() ※ {
         $0.strokeColor = .systemBlue
     }
 
