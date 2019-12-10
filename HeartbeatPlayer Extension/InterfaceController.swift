@@ -76,7 +76,7 @@ extension InterfaceController: HKWorkoutSessionDelegate {
         switch toState {
         case .running:
             hapticFeedbackTimer = Timer(timeInterval: 60.0/Double(heartrate ?? 1), target: self, selector: #selector(beat), userInfo: nil, repeats: true)
-            RunLoop.main.add(hapticFeedbackTimer!, forMode: .defaultRunLoopMode)
+            RunLoop.main.add(hapticFeedbackTimer!, forMode: .default)
         default:
             hapticFeedbackTimer?.invalidate()
             hapticFeedbackTimer = nil

@@ -5,16 +5,16 @@ final class PlaylistCell: Cell<DokiDokiActivity>, CellType {
     let titleLabel = UILabel() ※ {
         $0.font = .boldSystemFont(ofSize: 18)
     }
-    let dateLabel = UILabel() ※ { (l: UILabel) in
+    let dateLabel = UILabel() ※ { l in
         l.font = .systemFont(ofSize: 14)
         l.textColor = .gray
     }
-    let heartLabel = UILabel() ※ { (l: UILabel) in
+    let heartLabel = UILabel() ※ { l in
         l.font = .boldSystemFont(ofSize: 16)
         l.textColor = .magenta
     }
 
-    required init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
     }
 
