@@ -8,12 +8,21 @@ import ReactiveSwift
 
 private let store = HKHealthStore()
 
-class ViewController: FormViewController {
+class Cinderella6thViewController: FormViewController {
+    let actionSection = Section()
     let activitiesSection = Section()
 
     init() {
         super.init(nibName: nil, bundle: nil)
-        form +++ activitiesSection
+        form
+            +++ actionSection
+            <<< ButtonRow {
+                $0.title = "Fetch"
+                $0.onCellSelection { [weak self] _, _ in
+                    self?.setupHealthStore()
+                }
+            }
+            +++ activitiesSection
     }
 
     required init?(coder aDecoder: NSCoder) {fatalError()}
@@ -21,20 +30,12 @@ class ViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        tabBarItem.title = "Playlists"
-        navigationItem.title = "CINDERELLA GIRLS 5thLIVE TOUR"
+        navigationItem.title = "CINDERELLA GIRLS 6thLIVE TOUR"
         navigationItem.largeTitleDisplayMode = .never
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].compactMap {$0}
-
-        store.requestAuthorization(toShare: nil, read: Set(typesToRead)) { granted, error in
-            guard granted, error == nil else { NSLog("%@", "granted = \(granted), error = \(String(describing: error))"); return }
-            self.healthStoreDidSetup()
-        }
     }
 
     private func activities(title: String, start: Date, end: Date) -> Future<DokiDokiActivity, Never> {
@@ -47,7 +48,7 @@ class ViewController: FormViewController {
 
                 let activity = DokiDokiActivity(title: title, start: start, heartbeats: qSamples.map { s in
                     DokiDokiActivity.TimedBeat(time: s.startDate, heartrate: Int(s.quantity.doubleValue(for: HKUnit(from: "count/min"))))
-                })
+                }, audioLevels: [])
 //                NSLog("%@", "\(activities)")
 //                let file =  URL(fileURLWithPath: NSHomeDirectory())
 //                    .appendingPathComponent("Library")
@@ -59,24 +60,26 @@ class ViewController: FormViewController {
         }
     }
 
+    private func setupHealthStore() {
+        let typesToRead: [HKObjectType] = [.quantityType(forIdentifier: .heartRate)].compactMap {$0}
+
+        store.requestAuthorization(toShare: nil, read: Set(typesToRead)) { granted, error in
+            guard granted, error == nil else { NSLog("%@", "granted = \(granted), error = \(String(describing: error))"); return }
+            self.healthStoreDidSetup()
+        }
+
+        actionSection.first?.disabled = true
+        actionSection.first?.evaluateDisabled()
+    }
+
     private func healthStoreDidSetup() {
         guard activitiesSection.isEmpty else { return }
 
         let periods: [(title: String, start: String, end: String)] = [
-            ("宮城 Day1", "2017-05-13T17:00:00+0900", "2017-05-13T20:00:00+0900"),
-            ("宮城 Day2", "2017-05-14T16:00:00+0900", "2017-05-14T19:00:00+0900"),
-            ("石川 Day1", "2017-05-27T17:00:00+0900", "2017-05-27T20:00:00+0900"),
-            ("石川 Day2", "2017-05-28T16:00:00+0900", "2017-05-28T19:00:00+0900"),
-            ("大阪 Day1", "2017-06-09T18:00:00+0900", "2017-06-09T21:00:00+0900"),
-            ("大阪 Day2", "2017-06-10T16:00:00+0900", "2017-06-10T19:00:00+0900"),
-            ("静岡 Day1", "2017-06-24T17:00:00+0900", "2017-06-24T20:00:00+0900"),
-            ("静岡 Day2", "2017-06-25T16:00:00+0900", "2017-06-25T19:00:00+0900"),
-            ("幕張 Day1", "2017-07-08T17:00:00+0900", "2017-07-08T20:00:00+0900"),
-            ("幕張 Day2", "2017-07-09T16:00:00+0900", "2017-07-09T19:00:00+0900"),
-            ("福岡 Day1", "2017-07-29T16:30:00+0900", "2017-07-29T19:30:00+0900"),
-            ("福岡 Day2", "2017-07-30T15:30:00+0900", "2017-07-30T18:30:00+0900"),
-            ("SSA Day1", "2017-08-12T17:30:00+0900", "2017-08-12T22:30:00+0900"),
-            ("SSA Day2", "2017-08-13T17:30:00+0900", "2017-08-13T22:30:00+0900")]
+            ("メットライフドーム Day1", "2018-11-10T16:00:00+0900", "2018-11-10T20:00:00+0900"),
+            ("メットライフドーム Day2", "2018-11-11T16:00:00+0900", "2018-11-11T20:00:00+0900"),
+            ("ナゴヤドーム Day1", "2018-12-01T16:00:00+0900", "2018-12-01T20:00:00+0900"),
+            ("ナゴヤドーム Day2", "2018-12-02T16:00:00+0900", "2018-12-02T20:00:00+0900")]
 
         SignalProducer<(title: String, start: String, end: String), Never>(periods)
             .map {($0.title, ISO8601DateFormatter().date(from: $0.start)!, ISO8601DateFormatter().date(from: $0.end)!)}
