@@ -1,7 +1,8 @@
+#if canImport(UIKit) && !os(watchOS)
 import UIKit
 import ReactiveSwift
 
-@objc public protocol Reusable: class {
+@objc public protocol Reusable: AnyObject {
 	func prepareForReuse()
 }
 
@@ -14,3 +15,4 @@ extension Reactive where Base: NSObject, Base: Reusable {
 extension UITableViewCell: Reusable {}
 extension UITableViewHeaderFooterView: Reusable {}
 extension UICollectionReusableView: Reusable {}
+#endif
