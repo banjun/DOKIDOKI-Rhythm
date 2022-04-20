@@ -1,3 +1,4 @@
+#if canImport(UIKit) && !os(tvOS) && !os(watchOS)
 import ReactiveSwift
 import UIKit
 
@@ -37,6 +38,10 @@ private class SearchBarDelegateProxy: DelegateProxy<UISearchBarDelegate>, UISear
 
 extension Reactive where Base: UISearchBar {
 	private var proxy: SearchBarDelegateProxy {
+		// TODO: Mac Catalyst UISearchBarDelegate issue
+		// Related: https://github.com/ReactiveX/RxSwift/issues/2161
+		_ = DelegateProxy<UISearchBarDelegate>.self
+
 		return .proxy(for: base,
 		              setter: #selector(setter: base.delegate),
 		              getter: #selector(getter: base.delegate))
@@ -110,3 +115,4 @@ extension Reactive where Base: UISearchBar {
 		return makeBindingTarget { $0.showsCancelButton = $1 }
 	}
 }
+#endif

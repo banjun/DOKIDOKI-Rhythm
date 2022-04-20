@@ -1,13 +1,13 @@
 PODS:
-  - BrightFutures (8.0.0)
-  - Eureka (5.1.0)
+  - BrightFutures (8.1.0)
+  - Eureka (5.3.5)
   - FootlessParser (0.5.2)
   - NorthLayout (5.2.0):
     - FootlessParser (~> 0.4)
-  - ReactiveCocoa (10.1.0):
-    - ReactiveSwift (~> 6.1)
-  - ReactiveSwift (6.1.0)
-  - "※ikemen (0.6.0)"
+  - ReactiveCocoa (12.0.0):
+    - ReactiveSwift (~> 7.0)
+  - ReactiveSwift (7.0.0)
+  - "※ikemen (0.7.0)"
 
 DEPENDENCIES:
   - BrightFutures
@@ -27,14 +27,14 @@ SPEC REPOS:
     - "※ikemen"
 
 SPEC CHECKSUMS:
-  BrightFutures: f8427b46feabaf73c5e71ace7d86d65dfbb47696
-  Eureka: 18a5076dcf0c41f9cd9748aa1c42f4d11434bdae
+  BrightFutures: 6a974d08b121658dc0e6b93f5dec5353f9c24a44
+  Eureka: 7b39a479d074620d43028a0e2bfc3e0d667724df
   FootlessParser: 521916d592fa6cba06cfca6f4b5d4f5a2d49175a
   NorthLayout: 308a58a8f7d96f316e6399ff6432f8769321bbdf
-  ReactiveCocoa: 2f1d942d79072eded6d8c3bc7c2a641d40855a56
-  ReactiveSwift: b78c7259f8ca46368238c895ae33a6a3bf9f811c
-  "※ikemen": da47fe6e0acfbe241611221f4d98ade266bf50a2
+  ReactiveCocoa: 5d10386f0ce09f922006efbf784881c5fade27c5
+  ReactiveSwift: 48c4b9d3b497e8dd20b10300bb1a28ff93550f13
+  "※ikemen": db03a47c165f9889af8260758087b49f6cdeee2f
 
 PODFILE CHECKSUM: 9703ac3251374dafb83320e7876c700489e7c197
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.11.3
