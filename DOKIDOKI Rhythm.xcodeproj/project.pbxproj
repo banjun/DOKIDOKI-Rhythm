@@ -24,10 +24,13 @@
 		EAA04E841FE4C6B500C80876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAA04E831FE4C6B500C80876 /* Assets.xcassets */; };
 		EAA04E881FE4C6B500C80876 /* HeartbeatPlayer.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = EAA04E6E1FE4C6B400C80876 /* HeartbeatPlayer.app */; };
 		EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */; };
-		EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99C1F73E95D005665F1 /* ViewController.swift */; };
+		EAD8C99D1F73E95D005665F1 /* Cinderella5thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD8C99C1F73E95D005665F1 /* Cinderella5thViewController.swift */; };
 		EAD8C9A21F73E95D005665F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A11F73E95D005665F1 /* Assets.xcassets */; };
 		EAD8C9A51F73E95D005665F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */; };
 		EAD8C9AE1F73EEA2005665F1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */; };
+		EAF93DD6239B4AF200E6F09C /* Cinderella7thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD5239B49A300E6F09C /* Cinderella7thViewController.swift */; };
+		EAF93DD7239B4AF500E6F09C /* Cinderella6thViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD4239B49A100E6F09C /* Cinderella6thViewController.swift */; };
+		EAF93DD9239B887F00E6F09C /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF93DD8239B887F00E6F09C /* GraphView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,12 +99,15 @@
 		EAA04E851FE4C6B500C80876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD8C9971F73E95D005665F1 /* DOKIDOKI Rhythm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DOKIDOKI Rhythm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAD8C99C1F73E95D005665F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EAD8C99C1F73E95D005665F1 /* Cinderella5thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinderella5thViewController.swift; sourceTree = "<group>"; };
 		EAD8C9A11F73E95D005665F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD8C9A41F73E95D005665F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD8C9A61F73E95D005665F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAD8C9AC1F73EEA2005665F1 /* DOKIDOKI Rhythm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DOKIDOKI Rhythm.entitlements"; sourceTree = "<group>"; };
 		EAD8C9AD1F73EEA2005665F1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		EAF93DD4239B49A100E6F09C /* Cinderella6thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinderella6thViewController.swift; sourceTree = "<group>"; };
+		EAF93DD5239B49A300E6F09C /* Cinderella7thViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cinderella7thViewController.swift; sourceTree = "<group>"; };
+		EAF93DD8239B887F00E6F09C /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,10 +210,13 @@
 			children = (
 				EAD8C9AC1F73EEA2005665F1 /* DOKIDOKI Rhythm.entitlements */,
 				EAD8C99A1F73E95D005665F1 /* AppDelegate.swift */,
-				EAD8C99C1F73E95D005665F1 /* ViewController.swift */,
+				EAD8C99C1F73E95D005665F1 /* Cinderella5thViewController.swift */,
+				EAF93DD4239B49A100E6F09C /* Cinderella6thViewController.swift */,
+				EAF93DD5239B49A300E6F09C /* Cinderella7thViewController.swift */,
 				EA630FDD1FE4E72700418EB8 /* PlaylistRow.swift */,
 				EA630FD71FE4E57F00418EB8 /* DokiDokiActivity.swift */,
 				EA630FDA1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift */,
+				EAF93DD8239B887F00E6F09C /* GraphView.swift */,
 				13A5C8DA1FE4E65E00B2ACB0 /* PlayerSession.swift */,
 				EAD8C9A11F73E95D005665F1 /* Assets.xcassets */,
 				EAD8C9A31F73E95D005665F1 /* LaunchScreen.storyboard */,
@@ -468,12 +477,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAD8C99D1F73E95D005665F1 /* ViewController.swift in Sources */,
+				EAF93DD7239B4AF500E6F09C /* Cinderella6thViewController.swift in Sources */,
+				EAD8C99D1F73E95D005665F1 /* Cinderella5thViewController.swift in Sources */,
+				EAF93DD9239B887F00E6F09C /* GraphView.swift in Sources */,
 				EA630FDB1FE4E6E200418EB8 /* DokiDokiActivityViewController.swift in Sources */,
 				EA630FDE1FE4E72700418EB8 /* PlaylistRow.swift in Sources */,
 				EAD8C99B1F73E95D005665F1 /* AppDelegate.swift in Sources */,
 				EA630FD81FE4E57F00418EB8 /* DokiDokiActivity.swift in Sources */,
 				13A5C8DB1FE4E65E00B2ACB0 /* PlayerSession.swift in Sources */,
+				EAF93DD6239B4AF200E6F09C /* Cinderella7thViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,7 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -699,7 +711,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
